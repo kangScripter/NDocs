@@ -13,7 +13,7 @@ This document outlines the steps to manage and interact with the MailCrux databa
 SSH into the server using the following command:
 
 ```bash
-ssh root@username -p 22
+ssh root@server_ip_addreess -p 22
 ```
 docker exec -it {container-name} bash
 Replace {container-name} with the actual name of the container.
