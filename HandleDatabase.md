@@ -1,4 +1,4 @@
-# MailCrux Database Management Guide
+_# MailCrux Database Management Guide
 
 This document outlines the steps to manage and interact with the MailCrux database using Docker and MariaDB.
 
@@ -82,7 +82,7 @@ delete from suppressions;
 To reset the daily bounce statistics:
 
 ```bash
-update stats daily set bounces=0;
+update stats_daily set bounces=0;
 ```
 8. Count "Held" Messages
 To count the number of messages that are "held":
