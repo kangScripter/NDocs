@@ -27,4 +27,17 @@ use mailcrux
 ```bash
 show tables;
 select * from servers where name="domain name"
-
+use mailcrux-server-{server id}
+select count(*) from messages where status="hardfail";
+delete from messages where status="hardfail";
+delete from suppressions;
+update stats daily set bouces=0;
+select count(*) from messages where status="held";
+```
+## step 5: exit
+```bash
+\q
+exit
+exit
+exit
+```
