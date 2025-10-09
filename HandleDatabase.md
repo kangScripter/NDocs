@@ -93,6 +93,15 @@ select count(*) from messages where status="held";
 Step 5: Exit the Database and Docker Container
 After completing your database operations, exit MariaDB and the Docker container:
 
+To get a breakdown of messages by their status (e.g., delivered, hardfail, held, etc.):
+```b
+select status, count(*) from messages group by status;
+```
+ 
+To view bounce reasons for messages with bounce status:
+```b
+select recipient, bounce_reason from messages where status="bounced";
+ ```
 Exit MariaDB:
 
 ```bash
