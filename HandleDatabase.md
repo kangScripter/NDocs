@@ -1,4 +1,4 @@
-_# MailCrux Database Management Guide
+# MailCrux Database Management Guide
 
 This document outlines the steps to manage and interact with the MailCrux database using Docker and MariaDB.
 
