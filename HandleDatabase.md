@@ -82,7 +82,7 @@ delete from suppressions;
 To reset the daily bounce statistics:
 
 ```bash
-update stats daily set bouces=0;
+update stats daily set bounces=0;
 ```
 8. Count "Held" Messages
 To count the number of messages that are "held":
