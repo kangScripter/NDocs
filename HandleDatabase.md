@@ -17,3 +17,14 @@ Example -
 docker exec -it postal-mariadb bash
 ```
 
+## Step 3: Goto MariaDB 
+```bash
+mariadb -u root -p
+use mailcrux
+```
+
+## step 4: data base commands
+```bash
+show tables;
+select * from servers where name="domain name"
+
